@@ -1,5 +1,7 @@
 <script>
-response = "An angry alligator almost ate apples and antelope after asking aliens about astronauts and astroids. Graceful galloping geldings gallivanted gaily, grazing ginger graced goodies. Big bumbling bears balanced books beyond bubbling brooks beneath beautiful birches betwixt butterflies by blueberry bushes before breakfast."
+response = "An angry alligator almost ate apples and antelope after asking aliens about astronauts and astroids. 
+			Graceful galloping geldings gallivanted gaily, grazing ginger graced goodies. 
+			Big bumbling bears balanced books beyond bubbling brooks beneath beautiful birches betwixt butterflies by blueberry bushes before breakfast."
 lowerlimit = 0
 upperlimit = 100
  
@@ -12,16 +14,16 @@ while (response != "yes") {
   }
   response = prompt(guess)
   if (response == "yes") {
-	alert("I won!")
+    alert("I won!")
   }
   else if (response == "<") {
-   upperlimit = guess
+    upperlimit = guess
   } 
   else if (response == ">") {
-   lowerlimit = guess
+    lowerlimit = guess  
   }
   else {
-   alert ("Respond <, >, or yes")
+    alert ("Respond <, >, or yes")
   }
 }
 </script>
