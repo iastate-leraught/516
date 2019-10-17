@@ -1,0 +1,22 @@
+<script>
+response = "Big bumbling bears balanced books beyond bubbling brooks beneath beautiful birches betwixt butterflies by blueberry bushes before breakfast."
+lowerlimit = 0
+upperlimit = 100
+ 
+while (response != "yes") {
+  guess = Math.round((lowerlimit + upperlimit)/2)
+  response = prompt(guess)
+  if (response == "yes") {
+    alert("I won!")
+  }
+  else if (response == "<") {
+    upperlimit = guess
+  } 
+  else if (response == ">") {
+    lowerlimit = guess  
+  }
+  else {
+    alert ("Respond <, >, or yes")
+  }
+}
+</script>
