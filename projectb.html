@@ -1,0 +1,37 @@
+<script>
+//An abashed albino aardvark aroused an argumentative ant, ate arguably amazing amounts, and antacid accompanied apathetic appetizer’s abdominal affliction.
+//project a should have had an "a" sentence
+shift = prompt ("Enter the desired shift number. For example, a left shift would be negative and a right shift would be positive.")
+text = prompt ("Enter the text for encryption.")
+array = text.split("")
+encrypted = ""
+shift = shift %26
+for ( i = 0; i < array.length; i++){ 
+  code = text.charCodeAt(i);
+  if(code >= 65 && code <= 90){
+    shifted = code + shift
+	if (shifted > 90){
+	  shifted = shifted + -26
+	}
+	if (shifted < 65) {
+	  shifted = shifted + 26
+	}
+  }
+  else if (code >= 97 && code <= 122){
+    shifted = code + shift
+	if (shifted > 122){
+	  shifted = shifted + -26
+	}
+	if (shifted < 97) {
+	  shifted = shifted + 26
+	}
+  }
+  else {
+    shifted = code 
+  }
+  encrypted += String.fromCharCode(shifted);
+}
+
+alert (encrypted)
+</script>
+
