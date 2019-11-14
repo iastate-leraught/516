@@ -1,0 +1,6 @@
+<script>
+sentence = prompt ("Please enter a sentence.") 
+translated = sentence.replace(/([aeiouy]+)/gi, "aig$1").replace(/(aig[a-z]+)(aige\b)/gi, "$1e")
+alert (translated)
+
+</script>
